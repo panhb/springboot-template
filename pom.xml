@@ -19,6 +19,7 @@
         <druid.version>1.0.29</druid.version>
         <mysql.connector.version>5.1.20</mysql.connector.version>
         <fastjson.version>1.2.31</fastjson.version>
+        <lombok.version>1.16.20</lombok.version>
     </properties>
 
     <parent>
@@ -50,6 +51,11 @@
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
             <version>${fastjson.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
         </dependency>
     </dependencies>
 

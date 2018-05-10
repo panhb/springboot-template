@@ -9,17 +9,5 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class BaseController {
 
-	public int initPageNumber(Integer pageNumber){
-		if(pageNumber == null){
-			return 1;
-		}
-		return pageNumber;
-	}
 
-	public int initPageSize(Integer pageSize){
-		if(pageSize == null){
-			return 10;
-		}
-		return pageSize;
-	}
 }
