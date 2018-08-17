@@ -15,7 +15,7 @@ public class ConfigHelper implements CommandLineRunner {
 
 
 	@Override
-	public void run(String... strings) throws Exception {
+	public void run(String... strings) {
 		log.info("启动之后运行");
 	}
 }

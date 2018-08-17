@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Slf4j
 public class GlobalExceptionHandler {
 	
-	@ExceptionHandler
+	@ExceptionHandler(Exception.class)
 	@ResponseBody
 	public Result exceptionHandler(Exception e) {
 		log.error(e.getMessage(),e);

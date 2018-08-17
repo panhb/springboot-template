@@ -15,17 +15,20 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <java.version>1.8</java.version>
+        <java.version>1.10</java.version>
         <druid.version>1.0.29</druid.version>
         <mysql.connector.version>5.1.20</mysql.connector.version>
         <fastjson.version>1.2.31</fastjson.version>
-        <lombok.version>1.16.20</lombok.version>
+        <lombok.version>1.18.2</lombok.version>
+        <guava.version>26.0-jre</guava.version>
+        <junit.version>4.12</junit.version>
+        <commons-collections.version>3.2.2</commons-collections.version>
     </properties>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.6.RELEASE</version>
+        <version>2.0.4.RELEASE</version>
     </parent>
 
     <dependencies>
@@ -57,6 +60,23 @@
             <artifactId>lombok</artifactId>
             <version>${lombok.version}</version>
         </dependency>
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>${guava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>${commons-collections.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+
     </dependencies>
 
     <build>

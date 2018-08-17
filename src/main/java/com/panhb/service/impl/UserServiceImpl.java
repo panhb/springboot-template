@@ -18,7 +18,7 @@ import java.util.List;
 public class UserServiceImpl extends BaseService<User> implements UserService {
 
     @Autowired
-    UserDao userDao;
+    private UserDao userDao;
 
     @Override
     public List<User> findAll() {
