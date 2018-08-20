@@ -32,6 +32,12 @@ public class UserController extends BaseController {
         return Result.succData(userService.findAll());
     }
 
+    @RequestMapping("/findById")
+    public Result<User> findById(Long id) {
+        log.info("============findById============");
+        return Result.succData(userService.findById(id));
+    }
+
     @DemoAnnotation
     @RequestMapping("/task")
     public Result task() {

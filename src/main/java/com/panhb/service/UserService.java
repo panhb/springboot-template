@@ -15,4 +15,12 @@ public interface UserService {
      * @return List<User>
      */
     List<User> findAll();
+
+    /**
+     * findById
+     *
+     * @param id
+     * @return User
+     */
+    User findById(Long id);
 }

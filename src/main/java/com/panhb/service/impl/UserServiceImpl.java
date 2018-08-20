@@ -24,4 +24,9 @@ public class UserServiceImpl extends BaseService<User> implements UserService {
     public List<User> findAll() {
         return userDao.findAll();
     }
+
+    @Override
+    public User findById(Long id) {
+        return userDao.findById(id).get();
+    }
 }

@@ -18,7 +18,7 @@ public class BaseEntity extends BaseModel {
 
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     @JSONField(format = "yyyy-MM-dd HH:mm:ss")
     private Date createDate;
