@@ -7,6 +7,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.http.MediaType;
 
 import java.util.ArrayList;
@@ -16,6 +17,7 @@ import java.util.List;
  * @author panhb
  */
 @SpringBootApplication
+@EnableAspectJAutoProxy(exposeProxy = true)
 public class Application {
 
 	@Bean
